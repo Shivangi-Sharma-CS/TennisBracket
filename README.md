@@ -1,8 +1,8 @@
 
 # Disclaimer
 This was my assignment at the University of Prince Edward Island. 
-The assignment was provided by my professor Andrew Godbout and many thanks
-to my help center tutor William Taylor for his help in this assignment. 
+The assignment was provided by my professor [Andrew Godbout](https://github.com/andrewgodbout) and many thanks
+to my help center tutor [William Taylor](https://github.com/wtaylor17) for his help in this assignment. 
 
 2 years later now, I have revised the solution for getMatchesForPlayer method. 
 It was correct before but I took an algorithmic approach, which is of course better. 
