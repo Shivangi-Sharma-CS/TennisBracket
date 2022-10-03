@@ -4,8 +4,8 @@ This was my assignment at the University of Prince Edward Island.
 The assignment was provided by my professor [Andrew Godbout](https://github.com/andrewgodbout) and many thanks
 to my help center tutor [William Taylor](https://github.com/wtaylor17) for his help in this assignment. 
 
-2 years later now, I have revised the solution for getMatchesForPlayer method. 
-It was correct before but I took an algorithmic approach, which is of course better. 
+2 years later now, I have revised my solution. It was correct before, however, I have revised the solution to be 
+consistent with binary tree data structure. 
 
 In short for this assignment, the visualisation tree is provided by my professor. I have provided the JSON string
 to the Bracket.json file from my Bracket and Driver program. The interface was provided with the question. 
