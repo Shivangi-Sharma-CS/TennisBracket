@@ -22,33 +22,6 @@ public class Bracket {
         fillTreeWithDash(1);
     }
 
-    /**
-     Return a String of the matches for a given player. Each match should appear on its own line and should only include the opponent name.
-     The String starts with the first round match (opponent) for the player, round 2 (if applicable) is on line 2, etc.
-     @return the string for the opponents in each line starting from round 1 and so on.
-     **/
-    public String getMatchesForPlayer(String player) {
-        StringBuilder matches = new StringBuilder();
-        int playerExists = 0;
-        for(int i = arr.length-1; i > 0; i--) {
-            if(arr[i].equals(player)) {
-                playerExists = i;
-                break;
-            }
-        }
-
-        while ((playerExists > 0) && (arr[playerExists].equals(player))) {
-            if(playerExists % 2 == 0) {
-                matches.append(arr[playerExists + 1]).append("\n");
-                playerExists = playerExists/2;
-            }
-            else {
-                matches.append(arr[playerExists - 1]).append("\n");
-                playerExists = playerExists/2;
-            }
-        }
-        return matches.toString();
-    }
 
     /**
      Load the results for a given round into the Bracket
@@ -57,7 +30,7 @@ public class Bracket {
      **/
     public void loadResults(int round, String resultsFile) {
         try {
-            int startIndex = sizeOfTree - playersPlaying(round);
+            int startIndex = sizeOfTree - ((numCompetitors*2) / (int)(Math.pow(2, round)));
             File f = new File(resultsFile);
             Scanner s = new Scanner(f);
             int i = startIndex;
@@ -70,6 +43,16 @@ public class Bracket {
         catch (FileNotFoundException e) {
             e.getMessage();
         }
+    }
+
+    /**
+     Return a String of the matches for a given player. Each match should appear on its own line and should only include the opponent name.
+     The String starts with the first round match (opponent) for the player, round 2 (if applicable) is on line 2, etc.
+     @return the string for the opponents in each line starting from round 1 and so on.
+     **/
+    public String getMatchesForPlayer(String player) {
+        StringBuilder opponents = new StringBuilder();
+        return postOrderTraversal(1, player, opponents).replace("null", "");
     }
 
     /**
@@ -100,19 +83,6 @@ public class Bracket {
     }
 
     /**
-     * this method calculates the number of players in a round
-     * @param round the round of the tournament
-     * @return the number of players playing in the round
-     */
-    private int playersPlaying(int round) {
-        int playersPlaying = numCompetitors*2;
-        for (int i = 1 ; i <= round ; i++) {
-            playersPlaying = playersPlaying/2;
-        }
-        return playersPlaying;
-    }
-
-    /**
      * this method traverses in pre-order format and returns the string in json string format
      * @param index the index should be 1 to start the traversal and recursively fill left subtree and right subtree in a json string format
      * @return the json string
@@ -135,5 +105,27 @@ public class Bracket {
             }
         }
     }
+
+
+    /**
+     * This method does post order traversal of the tree to find the opponents of the given player
+     * @param index the starting index for the traversal
+     * @param player the player name whose opponents needs to be searched
+     * @param opponents the opponents string returned for the recursive method
+     * @return the string of opponents played by the player
+     */
+    private String postOrderTraversal(int index, String player, StringBuilder opponents) {
+        if(index > arr.length-1) {
+            opponents.append("");
+        }
+        else {
+            postOrderTraversal(2*index, player, opponents);
+            postOrderTraversal(2*index + 1, player, opponents);
+            if(arr[index].equals(player) && index%2==0) opponents.append(arr[index+1]).append(" ");
+            else if(arr[index].equals(player) && index%2!=0) opponents.append(arr[index-1]).append(" ");
+        }
+        return opponents.toString();
+    }
+
 
 }
