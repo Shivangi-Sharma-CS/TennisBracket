@@ -12,6 +12,9 @@ to the Bracket.json file from my Bracket and Driver program. The interface was p
 
 My task was to create a binary tree data structure from the provided data files by just using arrays. 
 
+In order to interact with the visual, please clone the project, and load the files for tennis bracket through the 
+terminal driver program. 
+
 # CS2920-A1-W2020
 ## Tennis Brackets
 
