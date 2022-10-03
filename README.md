@@ -1,13 +1,13 @@
 
 # Disclaimer
 This was my assignment at the University of Prince Edward Island. 
-The assignment was provided by my professor Andrew Godbout and I also
-sought help from my help center tutor William Taylor for this assignment. 
+The assignment was provided by my professor Andrew Godbout and many thanks
+to my help center tutor William Taylor for his help in this assignment. 
 
-I have now revised the solution for getMatchesForPlayer method. It was correct before 
-but I took an algorithmic approach, which is of course better. 
+2 years later now, I have revised the solution for getMatchesForPlayer method. 
+It was correct before but I took an algorithmic approach, which is of course better. 
 
-In short, the visualisation tree is provided by my professor. I have provided the JSON string
+In short for this assignment, the visualisation tree is provided by my professor. I have provided the JSON string
 to the Bracket.json file from my Bracket and Driver program. The interface was provided with the question. 
 
 My task was to create a binary tree data structure from the provided data files by just using arrays. 
