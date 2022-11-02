@@ -5,20 +5,37 @@ This was my assignment at the University of Prince Edward Island.
 The assignment was provided by my professor [Dr. Andrew Godbout](https://github.com/andrewgodbout). I thank him for his mentorship.
 I also want to thank my help center tutor [Mr. William Taylor](https://github.com/wtaylor17) for his guidance. 
 
-The assignment was provided by my professor [Andrew Godbout](https://github.com/andrewgodbout) and many thanks
-to my help center tutor [William Taylor](https://github.com/wtaylor17) for his mentorship. 
+# Summary
 
+We have been provided with 8 text files from the tennis tournament organisers. Each document consist of the players in the order they have appeared in a tournament round. 
+The tournament rounds are an elimination rounds, so only the player that has won goes to the next tournament. Our task is to construct a binary tree using arrays. 
+The visualization comes with the assignment. To interact with this program, we load the files from the `driver` program and see the result in browser from `bracket.html` file as follows:
 
-2 years later now, I have revised my solution. It was correct before, however, I have revised the solution to be 
-consistent with binary tree data structure. 
+![Load files](https://media.giphy.com/media/YbKnfRYg1Z3ZzxSsXa/giphy.gif)
 
-In short for this assignment, the visualisation tree is provided by my professor. I have provided the JSON string
-to the Bracket.json file from my Bracket and Driver program. The interface was provided with the question. 
+We keep loading the files for each match in the driver program as follows. 
 
-My task was to create a binary tree data structure from the provided data files by just using arrays. 
+![Driver program](https://media.giphy.com/media/WU99toclsC6VYypa2m/giphy.gif)
 
-In order to interact with the visual, please clone the project, and load the files for tennis bracket through the 
-terminal driver program. 
+Each node here represents the player that has won from the previous match.
+
+Not only we have to load a file to a binary tree, we also need the interface implementation to find the opponents for a given player, as shown below.
+
+![Choose opponent](https://media.giphy.com/media/hQXW1eD5GoqujcYMFb/giphy.gif)
+
+We choose option `2` in `driver` program, and provide the name of the player. 
+
+Now our program outputs the opponents, they are also visually collapsible, so each node represents the player that has won a match. 
+
+![Player nodes](https://media.giphy.com/media/5UU5gB7zDp6i4EHy8o/giphy.gif)
+
+You can load all 8 files and play and see the winner visually in a binary tree. 
+
+![Binary Tree](https://media.giphy.com/media/VFqw4O2BStBaanM9HR/giphy.gif)
+
+Please find the YouTube https://youtu.be/T40JkVGH0Zc for the expected driver program from my professor. 
+
+Please go through the actual assignment document below. 
 
 # CS2920-A1-W2020
 ## Tennis Brackets
