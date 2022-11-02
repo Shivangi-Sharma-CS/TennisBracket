@@ -1,8 +1,8 @@
 
 # Disclaimer
 This was my assignment at the University of Prince Edward Island. 
-The assignment was provided by my professor [Andrew Godbout](https://github.com/andrewgodbout) and many thanks
-to my help center tutor [William Taylor](https://github.com/wtaylor17) for his help in this assignment. 
+The assignment was provided by my professor [Dr. Andrew Godbout](https://github.com/andrewgodbout). I thank him for his mentorship.
+I also want to thank my help center tutor [Mr. William Taylor](https://github.com/wtaylor17) for his guidance. 
 
 2 years later now, I have revised my solution. It was correct before, however, I have revised the solution to be 
 consistent with binary tree data structure. 
