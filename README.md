@@ -1,5 +1,5 @@
 
-# Disclaimer
+# Thanks
 This was my assignment at the University of Prince Edward Island. 
 The assignment was provided by my professor [Dr. Andrew Godbout](https://github.com/andrewgodbout). I thank him for his mentorship.
 I also want to thank my help center tutor [Mr. William Taylor](https://github.com/wtaylor17) for his guidance. 
