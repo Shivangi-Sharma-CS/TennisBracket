@@ -9,9 +9,15 @@ I also want to thank my help center tutor [Mr. William Taylor](https://github.co
 
 We have been provided with 8 text files from the tennis tournament organisers. Each document consist of the players in the order they have appeared in a tournament round. 
 The tournament rounds are an elimination rounds, so only the player that has won goes to the next tournament. Our task is to construct a binary tree using arrays. 
-The visualization comes with the assignment. To interact with this program, we load the files from the `driver` program and see the result in browser from `bracket.html` file as follows:
+The visualization comes with the assignment. 
 
-![Load files](https://media.giphy.com/media/YbKnfRYg1Z3ZzxSsXa/giphy.gif)
+To interact with this program, we load the files from the `driver` program as follows:
+
+![gif1-1](https://media.giphy.com/media/mJgzzEtOUXKpKguV46/giphy.gif)
+
+and see the result in browser from `bracket.html` file as follows:
+
+![gif1-2](https://media.giphy.com/media/mkVWKDldmfhllJ0cZv/giphy.gif)
 
 We keep loading the files for each match in the driver program as follows. 
 
